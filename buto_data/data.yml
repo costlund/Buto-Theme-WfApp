@@ -1,0 +1,10 @@
+title: App
+description: This is a Buto application.
+plugin:
+  theme:
+    include:
+      data:
+        bootswatch:
+          theme: Cerulean
+container:
+  class: container-fluid

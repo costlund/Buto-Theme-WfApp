@@ -1,0 +1,20 @@
+rewrite:
+  set:
+    -
+      path_to_key: plugin_modules/account/settings
+      value:
+        allow:
+          signin: true
+          signin_method: username
+          registration: true
+          change_email: true
+          change_username: true
+          change_password: true
+          two_factor_authentication: false
+          remember: true
+          remember_signout_username: true
+        two_factor_authentication:
+          key_timeout: 600
+        mysql: yml:/../buto_data/theme/[theme]/mysql.yml
+        phpmailer: yml:/../buto_data/theme/[theme]/phpmailer.yml
+  

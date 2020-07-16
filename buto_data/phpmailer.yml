@@ -1,0 +1,11 @@
+SMTPAuth: true
+Username: _
+Password: _
+Host: _
+Port: 587
+From: from@world.com
+FromName: 'From World'
+To: to@world.com
+Subject: 'My subject'
+Body: 'My body'
+SMTPSecure: 'tls'

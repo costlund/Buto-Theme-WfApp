@@ -1,6 +1,10 @@
-version: '1.0.0'
+version: '1.0.1'
 history:
+  '1.0.1':
+    date: '2020-07-16'
+    title: 'buto_data files'
+    description: 'Add buto_data files.'
   '1.0.0':
     date: '2020-07-16'
     title: 'First version'
-    description: 'Add files.'      
+    description: 'Add files.'
