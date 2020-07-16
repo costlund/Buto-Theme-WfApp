@@ -1,0 +1,18 @@
+settings:
+  path: '0/innerHTML/0/innerHTML/0/innerHTML'
+content:
+  -
+    type: div
+    attribute:
+      class: yml:/../buto_data/theme/[theme]/data.yml:container/class
+    innerHTML:
+      -
+        type: div
+        attribute:
+          class: row
+        innerHTML:
+          -
+            type: div
+            attribute:
+              class: col-md-12
+            innerHTML:

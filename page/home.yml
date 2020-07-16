@@ -1,0 +1,19 @@
+settings:
+  layout:
+    - html
+    - main
+content:
+  -
+    type: div
+    settings:
+      role:
+        item:
+          - unknown
+    innerHTML: yml:/../buto_data/theme/[theme]/unknown.yml
+  -
+    type: div
+    settings:
+      role:
+        item:
+          - client
+    innerHTML: yml:/../buto_data/theme/[theme]/client.yml

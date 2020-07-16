@@ -1,0 +1,24 @@
+settings:
+  path: 'html/innerHTML/body/innerHTML'
+content:
+  doctype:
+    type: text
+    text: '<!DOCTYPE html>'
+  html:
+    type: html
+    innerHTML:
+      head:
+        type: head
+        innerHTML:
+          -
+            type: title
+            innerHTML: yml:/../buto_data/theme/[theme]/data.yml:title
+          -
+            type: widget
+            data:
+              plugin: 'theme/include'
+              method: include
+              data: yml:/../buto_data/theme/[theme]/data.yml:plugin/theme/include/data
+      body:
+        type: body
+        innerHTML:
