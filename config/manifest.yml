@@ -1,5 +1,9 @@
-version: '1.0.2'
+version: '1.0.3'
 history:
+  '1.0.3':
+    date: '2020-07-16'
+    title: 'Readme buto_folder'
+    description: 'Add readme file to buto_data folder.'
   '1.0.2':
     date: '2020-07-16'
     title: 'Public folder'
