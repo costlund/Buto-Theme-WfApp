@@ -1,5 +1,9 @@
-version: '1.0.4'
+version: '1.0.5'
 history:
+  '1.0.5':
+    date: '2020-08-06'
+    title: 'Mysql path'
+    description: 'Change mysql file path form plugin account/admin_v1.'
   '1.0.4':
     date: '2020-07-16'
     title: 'Readme public'

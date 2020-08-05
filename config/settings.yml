@@ -7,7 +7,7 @@ plugin_modules:
   accountadmin:
     plugin: 'account/admin_v1'
     settings:
-      mysql: 'yml:/../buto_data/theme/dev/theme/mysql.yml'
+      mysql: 'yml:/../buto_data/theme/[theme]/mysql.yml'
 default_class: p
 default_method: home
 plugin:
