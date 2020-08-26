@@ -19,6 +19,14 @@ content:
               plugin: 'theme/include'
               method: include
               data: yml:/../buto_data/theme/[theme]/data.yml:plugin/theme/include/data
+          -
+            type: widget
+            data:
+              plugin: 'wf/embed'
+              method: embed
+              data:
+                type: script
+                file: /theme/[theme]/js/ThemeWfApp.js
       body:
         type: body
         innerHTML:

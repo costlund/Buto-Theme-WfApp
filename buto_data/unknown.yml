@@ -26,7 +26,7 @@
       type: a
       attribute:
         class: 'btn btn-primary btn-lg'
-        href: '/account/signin'
+        onclick: ThemeWfApp.signin(this)
         role: button
       innerHTML: 'Sign in'
     -

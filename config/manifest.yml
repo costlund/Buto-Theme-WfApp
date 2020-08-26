@@ -1,5 +1,9 @@
-version: '1.0.6'
+version: '1.1.0'
 history:
+  '1.1.0':
+    date: '2020-08-26'
+    title: 'Modal sign in'
+    description: 'Add js file and open sign in with a modal window.'
   '1.0.6':
     date: '2020-08-06'
     title: 'Template files'
