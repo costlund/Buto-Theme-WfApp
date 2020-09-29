@@ -12,13 +12,30 @@ content:
         innerHTML:
           -
             type: title
-            innerHTML: yml:/../buto_data/theme/[theme]/data.yml:title
+            settings:
+              innerHTML:
+                -
+                  file: /../buto_data/theme/[theme]/data.yml
+                  path_to_key: title
+                -
+                  file: /theme/[theme]/buto_data/data.yml
+                  path_to_key: title
           -
             type: widget
+            settings:
+              file_exist: /../buto_data/theme/[theme]/data.yml
             data:
               plugin: 'theme/include'
               method: include
               data: yml:/../buto_data/theme/[theme]/data.yml:plugin/theme/include/data
+          -
+            type: widget
+            settings:
+              file_exist: /theme/[theme]/buto_data/data.yml
+            data:
+              plugin: 'theme/include'
+              method: include
+              data: yml:/theme/[theme]/buto_data/data.yml:plugin/theme/include/data
           -
             type: widget
             data:

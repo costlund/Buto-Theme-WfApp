@@ -4,7 +4,8 @@ content:
   -
     type: div
     attribute:
-      class: yml:/../buto_data/theme/[theme]/data.yml:container/class
+      #class: yml:/../buto_data/theme/[theme]/data.yml:container/class
+      class: container-fluid
     innerHTML:
       -
         type: div

@@ -49,7 +49,7 @@
         enabled: globals:sys/settings/plugin_modules/account/settings/allow/registration
       attribute:
         class: 'btn btn-secondary btn-lg'
-        href: '/account/create'
+        onclick: ThemeWfApp.create(this)
         role: button
       innerHTML: 'Create account'
     -

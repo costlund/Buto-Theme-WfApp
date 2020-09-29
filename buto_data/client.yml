@@ -50,7 +50,7 @@
             enabled: globals:sys/settings/plugin_modules/account/settings/allow/change_username
           attribute:
             class: btn btn-info
-            href: '/account/username'
+            onclick: ThemeWfApp.username(this)
           innerHTML: Change username
         -
           type: a
@@ -58,7 +58,7 @@
             enabled: globals:sys/settings/plugin_modules/account/settings/allow/change_email
           attribute:
             class: btn btn-info
-            href: '/account/email'
+            onclick: ThemeWfApp.email(this)
           innerHTML: Change email
         -
           type: a
@@ -66,7 +66,7 @@
             enabled: globals:sys/settings/plugin_modules/account/settings/allow/change_password
           attribute:
             class: btn btn-info
-            href: '/account/password'
+            onclick: ThemeWfApp.password(this)
           innerHTML: Change password
     -
       type: p

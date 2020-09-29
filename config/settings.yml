@@ -3,11 +3,25 @@ plugin_modules:
     plugin: 'wf/doc'
   account:
     plugin: 'wf/account2'
-    settings: null
+    settings:
+      allow:
+        signin: true
+        signin_method: username
+        registration: true
+        change_email: true
+        change_username: true
+        change_password: true
+        two_factor_authentication: false
+        remember: true
+        remember_signout_username: true
+      two_factor_authentication:
+        key_timeout: 600
+      mysql: yml:/theme/[theme]/buto_data/mysql.yml
+      phpmailer: yml:/theme/[theme]/buto_data/phpmailer.yml
   accountadmin:
     plugin: 'account/admin_v1'
     settings:
-      mysql: 'yml:/../buto_data/theme/[theme]/mysql.yml'
+      mysql: yml:/theme/[theme]/buto_data/mysql.yml
 default_class: p
 default_method: home
 plugin:

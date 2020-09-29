@@ -17,4 +17,8 @@ rewrite:
           key_timeout: 600
         mysql: yml:/../buto_data/theme/[theme]/mysql.yml
         phpmailer: yml:/../buto_data/theme/[theme]/phpmailer.yml
+    -
+      path_to_key: plugin_modules/accountadmin/settings
+      value:
+        mysql: 'yml:/../buto_data/theme/[theme]/mysql.yml'
   
