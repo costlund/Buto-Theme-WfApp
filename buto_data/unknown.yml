@@ -12,12 +12,26 @@
       type: h1
       attribute:
         class: display-4
-      innerHTML: yml:/../buto_data/theme/[theme]/data.yml:title
+      settings:
+        innerHTML:
+          -
+            file: /../buto_data/theme/[theme]/data.yml
+            path_to_key: title
+          -
+            file: /theme/[theme]/buto_data/data.yml
+            path_to_key: title
     -
       type: p
       attribute:
         class: lead
-      innerHTML: yml:/../buto_data/theme/[theme]/data.yml:description
+      settings:
+        innerHTML:
+          -
+            file: /../buto_data/theme/[theme]/data.yml
+            path_to_key: description
+          -
+            file: /theme/[theme]/buto_data/data.yml
+            path_to_key: description
     -
       type: hr
       attribute:

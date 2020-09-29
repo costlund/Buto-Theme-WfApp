@@ -4,16 +4,32 @@ settings:
     - main
 content:
   -
-    type: div
+    type: widget
     settings:
       role:
         item:
           - unknown
-    innerHTML: yml:/../buto_data/theme/[theme]/unknown.yml
+    data:
+      plugin: yml/render
+      method: render
+      data:
+        yml:
+          -
+            filename: /../buto_data/theme/[theme]/unknown.yml
+          -
+            filename: /theme/[theme]/buto_data/unknown.yml
   -
-    type: div
+    type: widget
     settings:
       role:
         item:
           - client
-    innerHTML: yml:/../buto_data/theme/[theme]/client.yml
+    data:
+      plugin: yml/render
+      method: render
+      data:
+        yml:
+          -
+            filename: /../buto_data/theme/[theme]/client.yml
+          -
+            filename: /theme/[theme]/buto_data/client.yml
