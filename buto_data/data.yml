@@ -6,5 +6,3 @@ plugin:
       data:
         bootswatch:
           theme: Cerulean
-container:
-  class: container-fluid

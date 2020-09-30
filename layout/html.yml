@@ -20,6 +20,7 @@ content:
                 -
                   file: /theme/[theme]/buto_data/data.yml
                   path_to_key: title
+          # ...
           -
             type: widget
             settings:
@@ -28,6 +29,7 @@ content:
               plugin: 'theme/include'
               method: include
               data: yml:/../buto_data/theme/[theme]/data.yml:plugin/theme/include/data
+          # ...
           -
             type: widget
             settings:

@@ -1,5 +1,9 @@
-version: '1.3.0'
+version: '1.4.0'
 history:
+  '1.4.0':
+    date: '2020-09-30'
+    title: 'Improvement'
+    description: 'More improvements.'
   '1.3.0':
     date: '2020-09-29'
     title: 'Improvement'

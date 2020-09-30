@@ -1,63 +1,169 @@
 -
   type: div
   attribute:
-    class: jumbotron
-    style:
-      margin-top: 20px
+    class: 'pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center'
   innerHTML:
-    -
-      type: p
-      innerHTML: This is the unknown.yml elements. Use it as a template.
     -
       type: h1
       attribute:
         class: display-4
-      settings:
-        innerHTML:
-          -
-            file: /../buto_data/theme/[theme]/data.yml
-            path_to_key: title
-          -
-            file: /theme/[theme]/buto_data/data.yml
-            path_to_key: title
+      innerHTML: Pricing
     -
       type: p
       attribute:
         class: lead
-      settings:
-        innerHTML:
-          -
-            file: /../buto_data/theme/[theme]/data.yml
-            path_to_key: description
-          -
-            file: /theme/[theme]/buto_data/data.yml
-            path_to_key: description
+      innerHTML: 'Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.'
+-
+  type: div
+  attribute:
+    class: container
+  innerHTML:
     -
-      type: hr
+      type: div
       attribute:
-        class: my-4
-    -
-      type: a
-      attribute:
-        class: 'btn btn-primary btn-lg'
-        onclick: ThemeWfApp.signin(this)
-        role: button
-      innerHTML: 'Sign in'
-    -
-      type: a
-      settings:
-        enabled: globals:sys/settings/plugin_modules/account/settings/allow/registration
-      attribute:
-        class: 'btn btn-secondary btn-lg'
-        onclick: ThemeWfApp.create(this)
-        role: button
-      innerHTML: 'Create account'
-    -
-      type: p
-      attribute:
-        class: text-center
+        class: 'card-deck mb-3 text-center'
       innerHTML:
         -
-          type: img
+          type: div
           attribute:
-            src: /theme/[theme]/icon/link_icon.png
+            class: 'card mb-4 shadow-sm'
+          innerHTML:
+            -
+              type: div
+              attribute:
+                class: card-header
+              innerHTML:
+                -
+                  type: h4
+                  attribute:
+                    class: 'my-0 font-weight-normal'
+                  innerHTML: Free
+            -
+              type: div
+              attribute:
+                class: card-body
+              innerHTML:
+                -
+                  type: h1
+                  attribute:
+                    class: 'card-title pricing-card-title'
+                  innerHTML: '$0 '
+                -
+                  type: ul
+                  attribute:
+                    class: 'list-unstyled mt-3 mb-4'
+                  innerHTML:
+                    -
+                      type: li
+                      innerHTML: '10 users included'
+                    -
+                      type: li
+                      innerHTML: '2 GB of storage'
+                    -
+                      type: li
+                      innerHTML: 'Email support'
+                    -
+                      type: li
+                      innerHTML: 'Help center access'
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: 'btn btn-lg btn-block btn-outline-primary'
+                  innerHTML: 'Sign up for free'
+        -
+          type: div
+          attribute:
+            class: 'card mb-4 shadow-sm'
+          innerHTML:
+            -
+              type: div
+              attribute:
+                class: card-header
+              innerHTML:
+                -
+                  type: h4
+                  attribute:
+                    class: 'my-0 font-weight-normal'
+                  innerHTML: Pro
+            -
+              type: div
+              attribute:
+                class: card-body
+              innerHTML:
+                -
+                  type: h1
+                  attribute:
+                    class: 'card-title pricing-card-title'
+                  innerHTML: '$15 '
+                -
+                  type: ul
+                  attribute:
+                    class: 'list-unstyled mt-3 mb-4'
+                  innerHTML:
+                    -
+                      type: li
+                      innerHTML: '20 users included'
+                    -
+                      type: li
+                      innerHTML: '10 GB of storage'
+                    -
+                      type: li
+                      innerHTML: 'Priority email support'
+                    -
+                      type: li
+                      innerHTML: 'Help center access'
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: 'btn btn-lg btn-block btn-primary'
+                  innerHTML: 'Get started'
+        -
+          type: div
+          attribute:
+            class: 'card mb-4 shadow-sm'
+          innerHTML:
+            -
+              type: div
+              attribute:
+                class: card-header
+              innerHTML:
+                -
+                  type: h4
+                  attribute:
+                    class: 'my-0 font-weight-normal'
+                  innerHTML: Enterprise
+            -
+              type: div
+              attribute:
+                class: card-body
+              innerHTML:
+                -
+                  type: h1
+                  attribute:
+                    class: 'card-title pricing-card-title'
+                  innerHTML: '$29 '
+                -
+                  type: ul
+                  attribute:
+                    class: 'list-unstyled mt-3 mb-4'
+                  innerHTML:
+                    -
+                      type: li
+                      innerHTML: '30 users included'
+                    -
+                      type: li
+                      innerHTML: '15 GB of storage'
+                    -
+                      type: li
+                      innerHTML: 'Phone and email support'
+                    -
+                      type: li
+                      innerHTML: 'Help center access'
+                -
+                  type: button
+                  attribute:
+                    type: button
+                    class: 'btn btn-lg btn-block btn-primary'
+                  innerHTML: 'Contact us'

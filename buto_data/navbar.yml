@@ -1,0 +1,115 @@
+-
+  type: widget
+  data:
+    plugin: 'bootstrap/navbar_v1'
+    method: navbar
+    data:
+      brand_href: /
+      brand:
+        -
+          type: img
+          attribute:
+            src: /theme/[theme]/icon/link_icon.png
+            style:
+              width: 24px
+              margin-top: -5px
+      navbar:
+        id: navbar_wf_app
+        item:
+          -
+            type: text
+            settings:
+              innerHTML:
+                -
+                  file: /../buto_data/theme/[theme]/data.yml
+                  path_to_key: title
+                -
+                  file: /theme/[theme]/buto_data/data.yml
+                  path_to_key: title
+        item_right:
+          -
+            type: dropdown
+            active: true
+            text: Account
+            item:
+              -
+                type: text
+                settings:
+                  role:
+                    item:
+                      - client
+                text: globals:_SESSION/username
+                style: 'font-style:italic'
+              -
+                type: text
+                settings:
+                  role:
+                    item:
+                      - client
+                text: globals:_SESSION/email
+                style: 'font-style:italic'
+              -
+                type: divider
+                settings:
+                  role:
+                    item:
+                      - client
+              -
+                text: Sign in
+                settings:
+                  role:
+                    item:
+                      - unknown
+                onclick: ThemeWfApp.signin(this)
+              -
+                text: Create
+                settings:
+                  enabled: globals:sys/settings/plugin_modules/account/settings/allow/registration
+                  role:
+                    item:
+                      - unknown
+                onclick: ThemeWfApp.create(this)
+              -
+                text: Sign out
+                settings:
+                  role:
+                    item:
+                      - client
+                href: '/account/signout'
+              -
+                text: Username
+                settings:
+                  role:
+                    item:
+                      - client
+                onclick: ThemeWfApp.username(this)
+              -
+                text: Email
+                settings:
+                  role:
+                    item:
+                      - client
+                onclick: ThemeWfApp.email(this)
+              -
+                text: Password
+                settings:
+                  role:
+                    item:
+                      - client
+                onclick: ThemeWfApp.password(this)
+              -
+                type: divider
+                settings:
+                  role:
+                    item:
+                      - webmaster
+              -
+                text: Administrator
+                settings:
+                  role:
+                    item:
+                      - webmaster
+                href: '/accountadmin/desktop'
+                target: _blank
+  
+  

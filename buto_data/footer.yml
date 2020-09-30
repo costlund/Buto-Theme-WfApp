@@ -1,0 +1,195 @@
+-
+  type: footer
+  attribute:
+    class: 'pt-4 my-md-5 pt-md-5 border-top'
+  innerHTML:
+    -
+      type: div
+      attribute:
+        class: row
+      innerHTML:
+        -
+          type: div
+          attribute:
+            class: 'col-12 col-md'
+          innerHTML:
+            -
+              type: img
+              attribute:
+                class: mb-2
+                src: /theme/[theme]/icon/link_icon.png
+                alt: ''
+                width: '24'
+                height: '24'
+            -
+              type: small
+              attribute:
+                class: 'd-block mb-3 text-muted'
+              innerHTML: '© 2001-2020'
+        -
+          type: div
+          attribute:
+            class: 'col-6 col-md'
+          innerHTML:
+            -
+              type: h5
+              innerHTML: Features
+            -
+              type: ul
+              attribute:
+                class: 'list-unstyled text-small'
+              innerHTML:
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Cool stuff'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Random feature'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Team feature'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Stuff for developers'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Another one'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Last time'
+        -
+          type: div
+          attribute:
+            class: 'col-6 col-md'
+          innerHTML:
+            -
+              type: h5
+              innerHTML: Resources
+            -
+              type: ul
+              attribute:
+                class: 'list-unstyled text-small'
+              innerHTML:
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: Resource
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Resource name'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Another resource'
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: 'Final resource'
+        -
+          type: div
+          attribute:
+            class: 'col-6 col-md'
+          innerHTML:
+            -
+              type: h5
+              innerHTML: About
+            -
+              type: ul
+              attribute:
+                class: 'list-unstyled text-small'
+              innerHTML:
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: Team
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: Locations
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: Privacy
+                -
+                  type: li
+                  innerHTML:
+                    -
+                      type: a
+                      attribute:
+                        class: text-muted
+                        href: '#'
+                      innerHTML: Terms
+
+

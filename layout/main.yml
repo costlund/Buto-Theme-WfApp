@@ -1,10 +1,20 @@
 settings:
-  path: '0/innerHTML/0/innerHTML/0/innerHTML'
+  path: '1/innerHTML/0/innerHTML/0/innerHTML'
 content:
+  -
+    type: widget
+    data:
+      plugin: 'yml/render'
+      method: render
+      data:
+        yml:
+          -
+            filename: /../buto_data/theme/[theme]/navbar.yml
+          -
+            filename: /theme/[theme]/buto_data/navbar.yml
   -
     type: div
     attribute:
-      #class: yml:/../buto_data/theme/[theme]/data.yml:container/class
       class: container-fluid
     innerHTML:
       -
@@ -17,3 +27,29 @@ content:
             attribute:
               class: col-md-12
             innerHTML:
+  -
+    type: div
+    attribute:
+      class: container-fluid
+    innerHTML:
+      -
+        type: div
+        attribute:
+          class: row
+        innerHTML:
+          -
+            type: div
+            attribute:
+              class: col-md-12
+            innerHTML:
+              -
+                type: widget
+                data:
+                  plugin: 'yml/render'
+                  method: render
+                  data:
+                    yml:
+                      -
+                        filename: /../buto_data/theme/[theme]/footer.yml
+                      -
+                        filename: /theme/[theme]/buto_data/footer.yml

@@ -1,84 +1,26 @@
 -
-  type: div
+  type: h1
   attribute:
-    class: alert alert-success
     style:
       margin-top: 20px
-  innerHTML: 
+  innerHTML: 'Application example'
+-
+  type: p
+  attribute:
+    class: 'lead text-muted'
+  innerHTML: 'Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.'
+-
+  type: p
+  innerHTML:
     -
-      type: p
-      innerHTML: This is the client.yml elements. Use it as a template. 
-    -
-      type: p
+      type: a
       attribute:
-        class: text-center
-      innerHTML:
-        -
-          type: img
-          attribute:
-            src: /theme/[theme]/icon/link_icon.png
+        href: '#'
+        class: 'btn btn-primary my-2'
+      innerHTML: 'Main call to action'
     -
-      type: p
-      innerHTML:
-        -
-          type: strong
-          innerHTML: 'Username:'
-        -
-          type: span
-          innerHTML: globals:_SESSION/username
-    -
-      type: p
-      innerHTML:
-        -
-          type: strong
-          innerHTML: 'Email:'
-        -
-          type: span
-          innerHTML: globals:_SESSION/email
-    -
-      type: p
-      innerHTML:
-        -
-          type: a
-          attribute:
-            class: btn btn-warning
-            href: '/account/signout'
-          innerHTML: Sign out
-        -
-          type: a
-          settings:
-            enabled: globals:sys/settings/plugin_modules/account/settings/allow/change_username
-          attribute:
-            class: btn btn-info
-            onclick: ThemeWfApp.username(this)
-          innerHTML: Change username
-        -
-          type: a
-          settings:
-            enabled: globals:sys/settings/plugin_modules/account/settings/allow/change_email
-          attribute:
-            class: btn btn-info
-            onclick: ThemeWfApp.email(this)
-          innerHTML: Change email
-        -
-          type: a
-          settings:
-            enabled: globals:sys/settings/plugin_modules/account/settings/allow/change_password
-          attribute:
-            class: btn btn-info
-            onclick: ThemeWfApp.password(this)
-          innerHTML: Change password
-    -
-      type: p
-      settings:
-        role:
-          item:
-            - webmaster
-      innerHTML:
-        -
-          type: a
-          attribute:
-            class: btn btn-primary btn-sm
-            href: '/accountadmin/desktop'
-            target: _blank
-          innerHTML: Account admin
+      type: a
+      attribute:
+        href: '#'
+        class: 'btn btn-secondary my-2'
+      innerHTML: 'Secondary action'
