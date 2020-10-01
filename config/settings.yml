@@ -31,6 +31,9 @@ plugin:
   yml:
     render:
       enabled: true
+  file:
+    exist:
+      enabled: true
 events:
   load_theme_config_settings_after:
     -
