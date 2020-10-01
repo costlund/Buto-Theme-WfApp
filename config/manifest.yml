@@ -1,5 +1,9 @@
-version: '1.4.1'
+version: '1.4.2'
 history:
+  '1.4.2':
+    date: '2020-10-01'
+    title: 'Readme'
+    description: 'Readme improvement.'
   '1.4.1':
     date: '2020-10-01'
     title: 'File exist'
